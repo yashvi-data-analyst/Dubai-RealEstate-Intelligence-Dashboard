@@ -22,14 +22,14 @@ Dubai-RealEstate-Intelligence-Dashboard/
 │ └── dubai_housing_cleaning.ipynb # Jupyter Notebook for data cleaning
 │
 │── dashboard/
-│ └── LabMentix_Week2_Dubai_Housing_Dashboard.pbix # Power BI dashboard
+│ └── LabMentix_Week2_Dubai_Housing_Dashboard.pbix # Power BI dashboard file
 │
 │── report/
-│ └── LabMentix_Week2_Insights.pptx # Insights Slide (PPT)
-│ └── LabMentix_Week2_Insights.pdf # Insights Report (PDF)
+│ └── LabMentix_Week2_Insights.pptx # Insights Presentation (PPT)
+│ └── LabMentix_Week2_Insights.pdf # Insights Slide (PDF export)
 │
 │── video/
-│ └── Dubai_Housing_Dashboard.mp4 # Video Walkthrough (optional)
+│ └── Dubai_Housing_Dashboard.mp4 # Walkthrough Video (optional)
 │
 │── README.md
 
@@ -42,18 +42,17 @@ Dubai-RealEstate-Intelligence-Dashboard/
 Performed using **Pandas, Numpy** in `dubai_housing_cleaning.ipynb`:  
 - ✂️ Removed duplicates & invalid rows  
 - 🔄 Converted data types (numeric/text)  
-- 🔧 Handled missing values (Median for bedrooms/bathrooms, 'Unknown' for categorical fields)  
+- 🔧 Handled missing values (median fill + 'Unknown')  
 - ➕ Added calculated fields:  
   - `Price per Sqft = price / size`  
   - `Property Age = 2025 – year_built`  
-  - `Listing Category = Budget / Mid-Range / High-End` (based on quantiles)  
+  - `Listing Category = Budget / Mid-Range / High-End` (quantiles)  
 
 **Output:** `dubai_housing_enriched.csv` → Ready for Power BI 🚀  
 
 ---
 
 ## 📊 Dashboard Development (Power BI)  
-The **Dubai Real Estate Intelligence Dashboard** helps in exploring property prices, categories, and trends interactively.  
 
 ### KPI Cards  
 - 📌 Total Listings  
@@ -68,45 +67,48 @@ The **Dubai Real Estate Intelligence Dashboard** helps in exploring property pri
 - 📈 Line Chart → Price Trend by Year Built  
 - 🧩 Treemap → Listings by Location & Bedrooms  
 - 🏠 Column Chart → Listings by Bedrooms  
+- 🗺️ Map Visual → Average Price by Location (geospatial view)  
 
 ### Interactivity  
 - 🔍 Filters: Location, Bedrooms, Categories, Price Range  
-- 🎯 Custom colors: Urban (Blue), Suburb (Green), Rural (Orange)  
+- 🎯 Custom colors (Urban=Blue, Suburb=Green, Rural=Orange)  
 - 📌 Drill-downs & tooltips for details  
 
 ---
 
 ## 📝 Key Insights  
 - 🏙️ **Urban** → Highest Avg Prices → Luxury Hub  
-- 🏠 **Suburb** → Largest no. of listings (mostly 2–3 BHK, Mid-Range Homes)  
-- 🌿 **Rural** → Budget homes, lowest price per sqft  
+- 🏠 **Suburb** → Largest no. of listings (mainly 2–3 BHK, Mid-range homes)  
+- 🌿 **Rural** → Budget-friendly homes, lowest price per sqft  
 - 📈 Properties built post-2000 = Higher priced & more volatile  
 
 ---
 
 ## 💡 Recommendations  
-- **Investors:** Focus on Urban luxury (5BHK) for premium ROI 💰  
-- **Agents:** Target Suburb 2–3 BHK for faster sales volumes 🏠  
+- **Investors:** Focus Urban luxury (5BHK) for premium ROI 💰  
+- **Agents:** Target Suburb 2–3 BHK for faster sales volumes 🏡  
 - **Policymakers:** Support Affordable Housing in Urban & manage Suburb oversupply ⚖️  
 
 ---
 
 ## 📑 Deliverables  
 - ✅ [Power BI Dashboard (.pbix)](./dashboard/LabMentix_Week2_Dubai_Housing_Dashboard.pbix)  
-- ✅ [Insights PPT (.pptx)](./report/LabMentix_Week2_Insights.pptx)  
+- ✅ [Insights Presentation (.pptx)](./report/LabMentix_Week2_Insights.pptx)  
 - ✅ [Insights Report (.pdf)](./report/LabMentix_Week2_Insights.pdf)  
 - 🎥 [Video Walkthrough](./video/Dubai_Housing_Dashboard.mp4)  
 
 ---
 
 ## 🖼️ Dashboard Preview  
-*(Insert screenshot of your Power BI dashboard here, e.g. `![Dashboard Preview](./dashboard/dashboard_preview.png)`)  
+👉 Full interactive dashboard can be explored by opening the `.pbix` file included in the **/dashboard/** folder.  
+
+*(Screenshot not added here because Power BI file is already provided inside repo)* 🔥  
 
 ---
 
 ## 🙌 Acknowledgement  
-This project was developed as part of **LabMentix Internship – Week 2** challenge.  
-It demonstrates the complete workflow: **Python preprocessing + Power BI dashboarding + Business Insights**.  
+This project was developed as part of **LabMentix Internship – Week 2**.  
+It demonstrates end-to-end workflow: **Python preprocessing → Power BI dashboarding → Business Insights → Presentation & Video**.  
 
 ---
 
