@@ -92,10 +92,13 @@ Performed using **Pandas, Numpy** in `dubai_housing_cleaning.ipynb`:
 ---
 
 ## 📑 Deliverables  
-- ✅ [Power BI Dashboard (.pbix)](./dashboard/LabMentix_Week2_Dubai_Housing_Dashboard.pbix)  
-- ✅ [Insights Presentation (.pptx)](./report/LabMentix_Week2_Insights.pptx)  
-- ✅ [Insights Report (.pdf)](./report/LabMentix_Week2_Insights.pdf)  
-- 🎥 [Video Walkthrough](./video/Dubai_Housing_Dashboard.mp4)  
+- LabMentix_Week2_Dubai_Housing_Dashboard.pbix  
+- LabMentix_Week2_Insights.pptx  
+- LabMentix_Week2_Insights.pdf  
+- Dubai_Housing_Dashboard.mp4  
+- dubai_housing_cleaning.ipynb  
+- dubai_housing_enriched.csv  
+- housing_price_dataset.csv  
 
 ---
 
